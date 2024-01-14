@@ -8,7 +8,7 @@ jobs:
       - uses: armbian/build@main
         with:
           armbian_ui:        "server"
-          armbian_token:     "${{ secrets.GITHUB_TOKEN }}"  # GitHub token
+          armbian_token:     "${{ secrets.PERSONAL_TOKEN }}"  # GitHub token
           armbian_release:   "jammy"                        # userspace
           armbian_target:    "build"                        # build=image, kernel=kernel
           armbian_board:     "panther-x2"                   # build target
